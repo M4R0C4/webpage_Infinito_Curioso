@@ -31,7 +31,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--branco-neutro);
     line-height: 1.6;
-    background-image: url(/style/elements/Gemini_Generated_Image_u982tcu982tcu982.png);
+    background-image: url(/style/elements/background-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -85,29 +85,59 @@ header {
 /* =========================
    SEÇÕES
 ========================= */
-
+.logo{
+    background: transparent;
+}
 .banner{
     position: relative;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size:cover;
     width: 100vw;
     height: 40vh;
 }
+
 main{
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-top: 2rem;
     z-index: 1;
     width: 80vw;
-    height: 45vh;
+    height: 50vh;
     right: 10vw;
     left: 10vw;
-    top: 40vh;
+    top: 35vh;
     align-items: center;
     border: dotted;
+    border-radius: 1rem;
     background-color: var(--azul-intenso);
+}
+.texto-curvo {
+    font-size: 14px;          /* Tamanho da fonte */
+    fill: #333;                /* Cor do texto (no SVG, usa-se 'fill' em vez de 'color') */
+    font-weight: bold;
+    text-transform: uppercase; /* Exemplo de estilização */
+    letter-spacing: 2px;
+}
+
+/* Opcional: Ajustes no container */
+
+.content-img{
+    position: fixed;
+    z-index: 30;
+    width: 10rem;
+    height: 10rem;
+    top: 7rem;
+    border-radius: 100%;
+    background-color: #E89BB0;
+    border: dotted;
+}
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
 }
 .area-botoes{
     padding: 1rem 0;
@@ -127,11 +157,14 @@ main{
     text-decoration: none;
     color: var(--preto-suave);
     background-color: var(--amarelo-solar);
+    box-shadow: 6px 10px 0px 0px #111111;
     padding:.5rem;
     border-radius: 1rem;
     
 }
-
+.btn:hover{
+    box-shadow: none;
+}
 /* =========================
    RODAPÉ
 ========================= */
