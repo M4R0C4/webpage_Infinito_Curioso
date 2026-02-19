@@ -24,117 +24,27 @@
 </head>
 
 <body>
-
-    <!-- Link de pular para o conteúdo (acessibilidade teclado/leitor de tela) -->
-    <a href="#conteudo-principal" class="skip-link">
-        Pular para o conteúdo principal
-    </a>
-
     <!-- Cabeçalho sem barra de navegação -->
-    <header role="banner">
+    <header class='banner' role="banner">
         <h1>Infinito Curioso</h1>
-        <p>
-            Ciência é pra mim. Educação acessível em Física e Matemática.
-        </p>
+        
     </header>
 
     <!-- Conteúdo principal -->
     <main id="conteudo-principal" role="main">
 
         <!-- Seção Sobre -->
-        <section aria-labelledby="sobre-titulo">
-            <h2 id="sobre-titulo">Sobre o Projeto</h2>
+        <section class="area-botoes" aria-labelledby="area-botoes">
             <p>
-                O Infinito Curioso fortalece o conhecimento e inspira jovens a estudarem Física e Matemática,
-                promovendo inclusão, diversidade e empoderamento por meio da ciência.
+            Ciência é pra mim. Educação acessível em Física e Matemática.
             </p>
+            <ul class='lista-pai'>
+                <li class='lista-filho'><a class="btn" href="">Agendamento das Aulas</a></li>
+                <li class='lista-filho'><a class="btn" href="">Instagram</a></li>
+                <li class='lista-filho'><a class="btn" href="">LinkedIn</a></li>
+                <li class='lista-filho'><a class="btn" href="">Infinito Curioso (Blog)</a></li>
+            </ul>
         </section>
-
-        <!-- Seção Propósito -->
-        <section aria-labelledby="proposito-titulo">
-            <h2 id="proposito-titulo">Nosso Propósito</h2>
-            <p>
-                Tornar a ciência acessível, descomplicar conceitos e incentivar
-                meninas pretas e jovens com pouco acesso ao ensino científico.
-            </p>
-        </section>
-
-        <!-- Seção Conteúdos -->
-        <section aria-labelledby="conteudos-titulo">
-            <h2 id="conteudos-titulo">O que você vai encontrar</h2>
-
-            <article>
-                <h3>Física Descomplicada</h3>
-                <p>
-                    Explicações acessíveis sobre leis físicas, energia, movimento e universo.
-                </p>
-            </article>
-
-            <article>
-                <h3>Matemática Aplicada</h3>
-                <p>
-                    Conceitos matemáticos explicados de forma clara e contextualizada.
-                </p>
-            </article>
-
-            <article>
-                <h3>Representatividade na Ciência</h3>
-                <p>
-                    Histórias e inspirações de mulheres e pessoas negras na ciência.
-                </p>
-            </article>
-        </section>
-
-        <!-- Seção Formulário de Contato -->
-        <section aria-labelledby="contato-titulo">
-            <h2 id="contato-titulo">Entre em Contato</h2>
-
-            <form action="#" method="post" novalidate>
-                
-                <fieldset>
-                    <legend>Formulário de Contato</legend>
-
-                    <div>
-                        <label for="nome">Nome completo</label>
-                        <input 
-                            type="text" 
-                            id="nome" 
-                            name="nome" 
-                            required 
-                            aria-required="true"
-                        >
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            required 
-                            aria-required="true"
-                        >
-                    </div>
-
-                    <div>
-                        <label for="mensagem">Mensagem</label>
-                        <textarea 
-                            id="mensagem" 
-                            name="mensagem" 
-                            rows="5" 
-                            required 
-                            aria-required="true"
-                        ></textarea>
-                    </div>
-
-                    <button type="submit">
-                        Enviar mensagem
-                    </button>
-
-                </fieldset>
-            </form>
-        </section>
-
     </main>
 
     <!-- Rodapé -->
