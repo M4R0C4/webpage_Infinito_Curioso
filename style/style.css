@@ -111,7 +111,6 @@ main{
     left: 10vw;
     top: 35vh;
     align-items: center;
-    border: dotted;
     border-radius: 1rem;
     background-color: var(--azul-intenso);
 }
@@ -126,21 +125,17 @@ main{
 /* Opcional: Ajustes no container */
 
 .content-img{
-    position: fixed;
+    position: absolute;
     z-index: 30;
     width: 10rem;
     height: 10rem;
-    top: 7rem;
+    top: -7rem;
     border-radius: 100%;
-    background-color: #E89BB0;
-    border: dotted;
-}
-.swiper-wrapper{
-    width: 100%;
-    height: 100%;
+    background-image: url(./elements/111.png);
+    background-size: contain;    
 }
 .area-botoes{
-    padding: 1rem 0;
+    padding: 2rem 0;
     height: 100%;
 }
 .lista-pai{
