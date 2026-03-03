@@ -31,12 +31,10 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--branco-neutro);
     line-height: 1.6;
-    background-image: url(/style/elements/background-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: linear-gradient(180deg, #d5d5d5,#f7f8fa);
     height: 100vh;
     width: 100vw;
+    
     
 }
 
@@ -69,6 +67,7 @@ p {
     font-size: 1rem;
     max-width: 65ch;
     text-align: center;
+
 }
 
 /* =========================
@@ -113,6 +112,7 @@ main{
     align-items: center;
     border-radius: 1rem;
     background-color: var(--azul-intenso);
+    
 }
 .texto-curvo {
     font-size: 14px;          /* Tamanho da fonte */
@@ -131,6 +131,7 @@ main{
     height: 10rem;
     top: -7rem;
     border-radius: 100%;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.19);
     background-image: url(./elements/111.png);
     background-size: contain;    
 }
@@ -146,19 +147,35 @@ main{
 }
 .lista-filho{
     list-style-type: none;  
-    margin: 1rem;      
+    margin: .5rem;      
 }
 .btn{
     text-decoration: none;
     color: var(--preto-suave);
-    background-color: var(--amarelo-solar);
-    box-shadow: 6px 10px 0px 0px #111111;
-    padding:.5rem;
+    background-color: var(--rosa-suave);
+    /*box-shadow: 6px 10px 0px 0px #111111;*/
     border-radius: 1rem;
+    border: solid .3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     
 }
+.img-icon{
+    background-color: var(--branco-neutro);
+    padding: 0.4rem 0.3rem 0;
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+.texto {
+    padding-right: 1rem;
+}
+img{
+    height: 1.3rem;
+}
 .btn:hover{
-    box-shadow: none;
+    background-color: #F9C80E;
+    border: solid 0.3rem var(--roxo-cosmico);
+    font-weight: bold;
 }
 /* =========================
    RODAPÉ
